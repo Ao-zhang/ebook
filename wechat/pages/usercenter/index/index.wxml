@@ -1,0 +1,84 @@
+<!--usercenter/index/index.wxml-->
+<view class="container">
+  <view class="profile-info">
+    <image bindtap="onUserInfoClick" class="avatar" src="{{userInfo.avatar}}"></image>
+    <view class="info">
+      <text class='name' bindtap='onUserInfoClick'>{{ userInfo.u_nickname || '点击登录' }}</text>
+      <!-- <text class='level' bindtap='onUserInfoClick'></text> -->
+    </view>
+    <image bindtap="onUserInfoClick" class='btn' src='/static/images/address_right.png'></image>
+  </view>
+
+  <view class="user-menu">
+    <view class="item">
+      <navigator url="/pages/ucenter/order/order" class="a">
+        <text class="icon order"></text>
+        <text class="txt">我的订单</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="/pages/ucenter/collect/collect" class="a">
+        <text class="icon address"></text>
+        <text class="txt">我的收藏</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="/pages/ucenter/footprint/footprint" class="a">
+        <text class="icon security"></text>
+        <text class="txt">我的足迹</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="../address/address" class="a">
+        <text class="icon address"></text>
+        <text class="txt">地址管理</text>
+      </navigator>
+    </view>
+    <view class="item">
+      <navigator url="url" class="a">
+        <text class="icon security"></text>
+        <text class="txt">账号安全</text>
+      </navigator>
+    </view>
+    <view class="item no-border">
+      <navigator url="url" class="a">
+        <text class="icon kefu"></text>
+        <text class="txt">联系客服</text>
+      </navigator>
+    </view>
+    <view class="item item-bottom">
+      <navigator url="url" class="a">
+        <text class="icon help"></text>
+        <text class="txt">帮助中心</text>
+      </navigator>
+    </view>
+    <view class="item item-bottom">
+      <navigator url="/pages/ucenter/feedback/feedback" class="a">
+        <text class="icon feedback"></text>
+        <text class="txt">意见反馈</text>
+      </navigator>
+    </view>
+  </view>
+
+  <!-- <view class="logout" bindtap="exitLogin">退出登录</view> -->
+</view>
+
+<view class='dialog-login' wx:if="{{showLoginDialog}}" bindtap='onCloseLoginDialog'>
+  <view class='dialog-body' catchtap='onDialogBody'>
+    <view class='title'>登录或注册</view>
+    <view class='content'>
+      <button type="primary" bindtap="onLogin">登录</button>
+      <button lang="zh_CN" bindtap="onRegister">注册</button>
+    </view>
+  </view>
+</view>
+<!--
+<view class='dialog-logout' wx:if="{{showLogoutDialog}}" bindtap='onCloseLogoutDialog'>
+  <view class='dialog-body' catchtap='onDialogBody'>
+    <view class='title'>退出登录？</view>
+    <view class='content'>
+      <button type="primary" bindtap="onLogout">确认</button>
+    </view>
+  </view>
+</view>
+-->

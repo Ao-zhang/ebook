@@ -1,0 +1,50 @@
+.site-layout-content {
+    background: #fff;
+    padding: 24px;
+    min-height: 280px;
+}
+#components-layout-demo-top .logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 24px 16px 0;
+    float: left;
+}
+.CartButton{
+    float:right;
+}
+
+#logo {
+    float: left;
+    height: 64px;
+    overflow: hidden;
+    white-space: nowrap;
+    line-height: 64px;
+    text-decoration: none;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.logo-font {
+    margin-top : 0.4em;
+}
+
+#header{
+    position: fixed;
+    z-index: 10;
+    max-width: 100%;
+    background: antiquewhite;
+    -webkit-box-shadow: 0 2px 8px #f0f1f2;
+    box-shadow: 0 2px 8px #f0f1f2;
+    width:100%;
+}
+
+#hd-content{
+    width:100%;
+    margin:0 auto;
+    box-shadow: 0 2px 8px #f5c6cb;
+}
+
+.MenuCartcontrol{
+    float:right;
+}

@@ -1,0 +1,86 @@
+<!--index.wxml-->
+<view class="container">
+  <!--<view class="search">
+    <navigator url="/pages/search/search" class="input">
+      <image class="icon"></image>
+      <text class="txt">商品搜索, 共{{goodsCount}}款好物</text>
+    </navigator>
+  </view>-->
+  <swiper class="banner" 
+          indicator-dots="true" 
+          autoplay="{{true}}" 
+          interval="3000" 
+          duration="1000"
+          circular="true"
+          >
+    <swiper-item wx:for="{{banner}}" wx:key="{{index}}" wx:index="{{index}}">
+     <!-- <navigator url="{{item.link}}"> -->
+        <image src="{{item}}" background-size="cover" mode="aspectFill"></image>
+      <!--</navigator> -->
+    </swiper-item>
+  </swiper>
+  <view class="a-section a-new" wx:if="{{newbooks.length > 0}}">
+    <view class="h">
+      <view>
+        <!--<navigator url="../newGoods/newGoods">-->
+          <text class="txt">周一周四 · 新品首发</text>
+        <!--</navigator>-->
+      </view>
+    </view>
+    <view class="b">
+      <view class="item" wx:for="{{newbooks}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.b_id}}">
+        <navigator url="/pages/bookdetail/bookdetail?id={{item.b_id}}">
+          <image class="img" src="{{item.img_src}}" background-size="cover"></image>
+          <text class="name">{{item.b_title}}</text>
+          <text class="price">￥{{item.price}}</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="a-section a-popular" wx:if="{{hotbooks.length > 0}}">
+    <view class="h">
+      <view>
+        <navigator url="../hotGoods/hotGoods">
+          <text class="txt">人气推荐</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="b">
+      <view class="item" wx:for="{{hotbooks}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.b_id}}">
+        <navigator url="/pages/bookdetail/bookdetail?id={{item.b_id}}">
+          <image class="img" src="{{item.img_src}}" background-size="cover"></image>
+          <view class="right">
+            <view class="text">
+              <text class="name">{{item.b_title}}</text>
+              <text class="desc">{{item.description}}</text>
+              <text class="price">￥{{item.price}}</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class="a-section a-topic" wx:if="topics.length > 0">
+    <view class="h">
+      <view>
+        <navigator url="../topic/topic" open-type="switchTab">
+          <text class="txt">专题精选</text>
+        </navigator>
+      </view>
+    </view>
+    <view class="b">
+      <scroll-view scroll-x="true" class="list">
+        <view class="item" wx:for="{{topics}}" wx:for-index="index" wx:for-item="item" wx:key="{{item.b_id}}">
+         <navigator url="/pages/bookdetail/bookdetail?id={{item.b_id}}">
+            <image class="img" src="{{item.img_src}}" background-size="cover"></image>
+            <view class="np">
+              <text class="name">{{item.b_title}}</text>
+              <text class="price">￥{{item.price}}元起</text>
+            </view>
+            <text class="desc">{{item.category}}</text>
+            </navigator>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

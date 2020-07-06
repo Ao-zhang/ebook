@@ -1,0 +1,24 @@
+<!--pages/auth/login/login.wxml-->
+<view class="container">
+  <image class='background' src='/static/background/whale.png' mode="aspectFill"></image>
+    <view class="form-box">
+
+    	<view class="form-item">
+    		<input class="username" value="{{username}}" bindinput="bindUsernameInput" placeholder="请输入用户名" auto-focus/>
+    		<image wx:if="{{ username.length > 0 }}" id="clear-username" class="clear" src="/static/images/clear_input.png" catchtap="clearInput"></image>
+    	</view>
+
+    	<view class="form-item">
+    		<input class="password" value="{{password}}" password bindinput="bindPasswordInput" placeholder="请输入密码"/>
+    		<image class="clear" id="clear-password" wx:if="{{ password.length > 0 }}" src="/static/images/clear_input.png" catchtap="clearInput"></image>
+    	</view>
+
+    	<button type="default" class="login-btn" bindtap="Login">登录</button>
+
+    	<view class="form-item-text">
+    		<navigator url="/pages/auth/register/register" class="register">注册账号</navigator>
+		    <!--<navigator url="/pages/auth/reset/reset" class="reset">忘记密码</navigator> -->	
+    	</view>
+
+    </view>
+</view>

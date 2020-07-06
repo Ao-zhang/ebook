@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-EbookApplication<ebook>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.org.ebook.EbookApplication",
+            "projectName": "ebook",
+            "args": ""
+        }
+    ]
+}

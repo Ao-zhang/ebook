@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "wx-minicomponent": "^1.0.2"
+  },
+ /* "usingComponents": {
+    "highLight": "/components/highLight/highLight"
+  }*/
+}

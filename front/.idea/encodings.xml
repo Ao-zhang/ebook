@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/Component/BooklTable.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Component/BuyChart.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Component/OrderTable.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Component/PersonInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Component/SaleChart.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Component/UserTable.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/Component/userAvatar.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/ChangeBooks.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/OrdersInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/SaleAnalyze.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/UsersInfo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/cart.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/pages/personal.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/services/UserService.js" charset="UTF-8" />
+  </component>
+</project>
