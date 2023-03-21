@@ -30,7 +30,7 @@ dependencies:
   flutter_screenutil: ^1.0.2 #屏幕大小适配
   cached_network_image: ^2.2.0+1 #网络图片缓存
   flutter_easyrefresh: ^2.1.1 #上拉加载和下拉刷新
-  dio: ^3.0.9 # 网络框架
+  dio: ^5.0.3 # 网络框架
   provider: ^3.0.0+1
   shared_preferences: ^0.5.7+3 #本地数据缓存
   fluttertoast: ^4.0.1
